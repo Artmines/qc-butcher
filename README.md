@@ -20,3 +20,6 @@ RSG Framework Butcher, this allows you to take carcass of an animal to the butch
 
 # Starting the resource:
 - add the following to your server.cfg file : ensure qc-butcher
+
+# Giving Credit where Due
+- Thanks to RSG Core Team
