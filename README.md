@@ -3,6 +3,8 @@
 
 RSG Framework Butcher, this allows you to take carcass of an animal to the butcher and get money & raw meat in return. 
 
+MAKE SURE YOU ARE ON **RELEASE** NOT LATEST IN YOUR GAME CLIENT UNTIL I UPDATE THE MENU
+
 # Dependancies
 - rsg-core
 - rsg-menu
