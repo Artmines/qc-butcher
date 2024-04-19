@@ -8,7 +8,8 @@ RSG Framework Butcher, this allows you to take carcass of an animal to the butch
 - rsg-menu
 
 # Preview
-![image](https://github.com/Artmines/qc-butcher/assets/96462463/22e7e5d2-e887-4bd4-9b56-5a26158c599b)
+![image](https://github.com/Artmines/qc-butcher/assets/96462463/613aeeac-3e7a-455d-804b-ee60fc70c969)
+
 ![image](https://github.com/Artmines/qc-butcher/assets/96462463/a3a146b2-c849-435e-bd32-04093617b2a3)
 
 
