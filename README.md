@@ -1,5 +1,5 @@
 # Quantum Project
-- discord : https://discord.gg/7JCFzfuRa5
+https://discord.gg/kJ8ZrGM8TS
 
 RSG Framework Butcher, this allows you to take carcass of an animal to the butcher and get money & raw meat in return. 
 
