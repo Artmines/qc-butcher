@@ -74,12 +74,19 @@ AddEventHandler('qc-butcher:client:sellanimal', function()
                     print("reward item: "..tostring(rewarditem))
                     print("name: "..tostring(name))
                 end
-                RSGCore.Functions.Progressbar('sell-carcass',  Lang:t('progressbar.selling')..name..'..', Config.SellTime, false, true, {
-                    disableMovement = true,
-                    disableCarMovement = false,
-                    disableMouse = false,
-                    disableCombat = true,
-                }, {}, {}, {}, function() -- Done
+                exports['progressbar']:Progress({
+                    name = 'make-product',
+                    label = Lang:t('progressbar.selling')..name..'..',
+                    duration = Config.SellTime,
+                    useWhileDead = false,
+                    canCancel = true,
+                    controlDisables = {
+                        disableMovement = true,
+                        disableCarMovement = false,
+                        disableMouse = false,
+                        disableCombat = true,
+                    }
+                }, function()
                     local deleted = DeleteThis(holding)
                     if deleted then
                         if quality == false then
@@ -98,13 +105,15 @@ AddEventHandler('qc-butcher:client:sellanimal', function()
                             TriggerServerEvent('qc-butcher:server:reward', rewardmoney, rewarditem, 'perfect') -- perfect quality reward
                         end
                     else
-                        RSGCore.Functions.Notify(Lang:t('error.something_went_wrong'), 'error')
+                        --RSGCore.Functions.Notify(Lang:t('error.something_went_wrong'), 'error')
+                        TriggerEvent('rNotify:Tip', Lang:t('error.something_went_wrong'), 4000)
                     end
                 end)
             end
         end
     else
-        RSGCore.Functions.Notify(Lang:t('error.dont_have_animal'), 'error')
+        --RSGCore.Functions.Notify(Lang:t('error.dont_have_animal'), 'error')
+        TriggerEvent('rNotify:Tip', Lang:t('error.dont_have_animal'), 4000)
     end
 end)
 
