@@ -29,11 +29,6 @@ Config.ButcherLocations = {
     
 }
 
-Config.ButcherShop = {
-    -- butcher shop items
-    [1] = { name = 'raw_meat', price = 3, amount = 500, info = {}, type = 'item', slot = 1, },
-}
-
 Config.Animal = {
 
     {
